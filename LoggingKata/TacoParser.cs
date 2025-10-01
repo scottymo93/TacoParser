@@ -18,6 +18,7 @@
             if (cells.Length < 3)
             {
                 // Log error message and return null
+                logger.LogError("Invalid line");
                 return null; 
             }
             double latitude = double.Parse(cells[0]);
